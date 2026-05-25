@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  /* --color-primary: ; */
+  --color-primary: #F4B400;
+  --color-primary-hover: #E0A800;
+  --color-secondary: #FF8A00;
+
+  /* backgrounds  */
+  --color-surface-base: #FFFDF7;
+  --color-surface-muted: #FFF7E6;
+  --color-surface-card: #FFFFFF;
+  --color-surface-accent: #FFF1BF;
+
+  /* text  */
+  --color-text-main: #2B2B2B;
+  --color-text-muted: #5F5F5F;
+  --color-text-dim: #9A9A9A;
+
+  /* borders */
+  --color-border-base: #F1E2B8;
+  --color-border-muted: #FAF3DD;
+
+  /* focus ring */
+  --color-focus: #F4B400;
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+h4 {
+  @apply font-bold tracking-wide
+}
+
+/*  hover:bg-surface-accent hover:bg-amber-100/30 hover:text-amber-600 */
+.navigation-link {
+  @apply text-gray-600 font-semibold px-3 py-2 border border-transparent transition-all text-sm duration-75 ease-in rounded-sm
+}
+
+.navigation-link:hover {
+  @apply bg-primary/10 text-primary border-primary-hover/20
+}
+
+/* text-3xl font-black tracking-tight text-black flex items-center gap-1 */
+
+.nav-logo {
+  @apply text-3xl font-bold tracking-tighter
+}
+
+body {
+  @apply bg-surface-base font-body
+}
+
+.hero {
+  background-image: url('./assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @apply bg-blend-multiply bg-slate-700 w-[100vw] h-[70vh]
+}
+
+/* CSS */
+
+button {
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  outline: none;
+  cursor: pointer;
+  line-height: 1.15385;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+
+  @apply px-6 py-2 bg-primary text-text-main rounded-sm border font-bold
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+button:hover {
+  @apply bg-primary-hover
+}
