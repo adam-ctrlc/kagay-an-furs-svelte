@@ -27,6 +27,7 @@
   --font-body: 'Inter', sans-serif;
 }
 
+h1,
 h4 {
   @apply font-bold tracking-wide
 }
@@ -56,7 +57,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  @apply bg-blend-multiply bg-slate-700 w-[100vw] h-[70vh]
+  @apply bg-blend-multiply bg-slate-700 h-[70vh]
 }
 
 /* CSS */
@@ -79,4 +80,13 @@ button:focus {
 
 button:hover {
   @apply bg-primary-hover
+}
+
+.card {
+  box-shadow: 12px 12px 0px #F9D166;
+  transition: .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 0px #F9D166;
 }
