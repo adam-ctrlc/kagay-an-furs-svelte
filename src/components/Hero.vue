@@ -8,7 +8,7 @@
       <div class="mt-4">
 
         <button class="flex items-center gap-2 justify-between">Keep up with us!
-          <FlColorAnimalPawPrint class="text-2xl rotate-45 hover:scale-110" />
+          <FlColorAnimalPawPrint class="text-2xl  hover:scale-110" />
         </button>
       </div>
 
