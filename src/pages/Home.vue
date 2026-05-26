@@ -8,7 +8,7 @@
     <img :src="kfmImage" />
   </section>
 
-  <section id="about" class="px-12 py-3 bg-[#f7f7f7]">
+  <section id="about" class="px-8 md:px-12 py-3 bg-[#f7f7f7]">
     <div class="my-10">
       <h4 class="text-2xl">About</h4>
     </div>
@@ -18,7 +18,7 @@
         <img src="https://placehold.co/400" alt="" class="" />
       </div> -->
       <div class="self-start">
-        <div class="about-heading w-100">
+        <div class="about-heading w-full">
           <h1 class="text-4xl">Kagay-an Furs</h1>
         </div>
         <!-- 
