@@ -121,3 +121,11 @@ button:hover {
   gap: 6px;
   @apply text-text-main/50
 }
+
+.back-to-top {
+  @apply bg-text-main text-white
+}
+
+.back-to-top:hover {
+  @apply bg-text-muted
+}
