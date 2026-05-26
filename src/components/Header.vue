@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 z-100 bg-white/80 backdrop-blur-md">
+  <header class="fixed top-0 z-50 bg-white/80 backdrop-blur-md">
     <!-- NAVBAR -->
     <nav
       class="flex w-screen justify-between items-center border-b border-gray-200 p-4 lg:px-10"
@@ -21,31 +21,41 @@
         <a href="#" class="navigation-link">Code of Conduct</a>
       </div>
 
-      <!-- ATTEND BUTTON + MOBILE HAMBURGER -->
-      <!-- <div class="navbar-end gap-2">
-
-      <a href="#" class="btn btn-neutral btn-lg hidden sm:inline-flex font-bold px-5">
-        🎟️ Attend KFM!
-      </a>
-
-      <div class="dropdown dropdown-end lg:hidden">
-        <label tabindex="0" class="btn btn-ghost btn-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </label>
-        <ul tabindex="0"
-          class="dropdown-content menu bg-white rounded-box z-50 mt-2 w-52 p-2 shadow-lg border border-gray-200 font-semibold text-gray-600">
-          <li><a href="#" class="hover:text-black hover:bg-gray-100">🏠 Home</a></li>
-          <li><a href="#" class="hover:text-black hover:bg-gray-100">🐾 About</a></li>
-          <li><a href="#" class="hover:text-black hover:bg-gray-100">📁 Archive</a></li>
-          <li><a href="#" class="hover:text-black hover:bg-gray-100">📜 Code of Conduct</a></li>
-          <div class="divider my-1"></div>
-          <li><a href="#" class="btn btn-neutral btn-lg rounded-full font-bold justify-center">Attend KFM!</a></li>
-        </ul>
+      <!-- MOBILE HAMBURGER -->
+      <div class="navbar-end gap-2">
+        <div class="dropdown dropdown-end lg:hidden">
+          <label tabindex="0" @click="mobileNavHandler" class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+        </div>
       </div>
-    </div> -->
     </nav>
+    <ul
+      tabindex="0"
+      ref="mobileNav"
+      class="top-0 h-0 w-full overflow-hidden bg-white transtion-all duration-200 ease-in-out shadow-lg border border-gray-200 font-semibold text-gray-600"
+    >
+      <div class="flex flex-col pt-4">
+        <a href="/" class="navigation-link">Home</a>
+        <!-- <a href="#about" class="navigation-link">About</a> -->
+        <a href="#" class="navigation-link">Archive</a>
+        <a href="/team" class="navigation-link">Team</a>
+        <a href="#" class="navigation-link">Code of Conduct</a>
+      </div>
+    </ul>
   </header>
 </template>
 
@@ -54,6 +64,14 @@ import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
 export default {
   components: {
     FlColorAnimalPawPrint,
+  },
+
+  methods: {
+    mobileNavHandler() {
+      this.$refs.mobileNav.classList.toggle("h-0");
+      this.$refs.mobileNav.classList.toggle("h-52");
+      this.$refs.mobileNav.classList.toggle("px-12");
+    },
   },
 };
 </script>
