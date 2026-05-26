@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed top-0 z-50 bg-white/80 backdrop-blur-md">
+  <header class="fixed top-0 z-50 bg-white/80 backdrop-blur-md w-full">
     <!-- NAVBAR -->
     <nav
-      class="flex w-screen justify-between items-center border-b border-gray-200 p-4 lg:px-10"
+      class="flex w-full justify-between items-center border-b border-gray-200 p-4 lg:px-10"
     >
       <!-- LOGO -->
       <div
@@ -22,8 +22,8 @@
       </div>
 
       <!-- MOBILE HAMBURGER -->
-      <div class="navbar-end gap-2">
-        <div class="dropdown dropdown-end lg:hidden">
+      <div class="self-end gap-2">
+        <div class="self-end lg:hidden">
           <label tabindex="0" @click="mobileNavHandler" class="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
