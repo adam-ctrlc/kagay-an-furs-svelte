@@ -1,11 +1,7 @@
 <template>
   <div class="card bg-surface-card rounded-md overflow-hidden w-[250px]">
     <div class="flex flex-col border border-border-base h-full">
-      <img
-        src="https://placehold.co/300x200"
-        alt=""
-        class="w-full h-80 object-cover"
-      />
+      <img :src="pfp" :alt="name" class="w-full h-80 object-cover" />
 
       <div class="flex flex-col px-4 py-3">
         <h2 class="text-md md:text-lg font-semibold">
@@ -49,7 +45,7 @@ import {
 } from "@kalimahapps/vue-icons";
 
 export default {
-  props: ["name", "role", "fursona", "bio"],
+  props: ["name", "role", "fursona", "bio", "pfp"],
   components: {
     BsArrowReturnRight,
     FlColorAnimalPawPrint,

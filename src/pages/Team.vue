@@ -24,11 +24,13 @@
           role="Founder"
           fursona="Reynard Ashvites"
           bio="They see my howlin' they hatin'"
+          :pfp="cerbPfp"
         ></TeamCard>
         <TeamCard
           name="Jyn"
           role="Web Developer"
           bio="Not a furry, just a developer."
+          :pfp="jynPfp"
         ></TeamCard>
         <TeamCard name="Anakin PH" role="Adviser"></TeamCard>
         <TeamCard name="Cos de Al" role="Illustrator"></TeamCard>
@@ -47,10 +49,20 @@
 <script>
 import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
 import TeamCard from "../components/TeamCard.vue";
+import jynPfp from "../assets/members/jyn.jpg";
+import cerbPfp from "../assets/members/cerb.jpg";
+
 export default {
   components: {
     TeamCard,
     FlColorAnimalPawPrint,
+  },
+
+  data() {
+    return {
+      jynPfp,
+      cerbPfp,
+    };
   },
 };
 </script>
