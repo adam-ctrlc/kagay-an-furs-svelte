@@ -14,10 +14,10 @@
 
       <!-- DESKTOP LINKS -->
       <div class="hidden lg:flex gap-1 space-x-8">
-        <RouterLink to="/" class="navigation-link">Home</RouterLink>
+        <a href="/" class="navigation-link">Home</a>
         <!-- <a href="#about" class="navigation-link">About</a> -->
         <a href="#" class="navigation-link">Archive</a>
-        <RouterLink to="/team" class="navigation-link">Team</RouterLink>
+        <a href="/team" class="navigation-link">Team</a>
         <a href="#" class="navigation-link">Code of Conduct</a>
       </div>
 
