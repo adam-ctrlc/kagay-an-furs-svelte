@@ -9,7 +9,7 @@
         class="flex items-center gap-4 hover:text-primary duration-70 ease-in"
       >
         <h1 href="#" class="nav-logo">Kagay-an Furs</h1>
-        <FlColorAnimalPawPrint class="text-4xl rotate-45" />
+        <FlColorAnimalPawPrint class="text-xl sm:text-4xl rotate-45" />
       </div>
 
       <!-- DESKTOP LINKS -->

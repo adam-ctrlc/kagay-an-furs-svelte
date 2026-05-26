@@ -2,10 +2,12 @@
   <div id="home" class="hero relative">
     <!-- contents -->
     <div
-      class="text-white border flex items-start justify-center px-12 h-full flex-col"
+      class="space-y-4 md:space-y-0 text-white flex items-start justify-center px-12 h-full flex-col"
     >
-      <h1 class="font-bold text-6xl">Kagay-an Furs</h1>
-      <p class="text-lg">The first and only Furry Meetup in Cagayan de Oro</p>
+      <h1 class="font-bold">Kagay-an Furs</h1>
+      <p class="text-md md:text-lg">
+        The first and only Furry Meetup in Cagayan de Oro
+      </p>
       <div class="mt-4">
         <button class="flex items-center gap-2 justify-between">
           Keep up with us!

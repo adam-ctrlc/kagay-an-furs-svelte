@@ -33,7 +33,7 @@ html {
 
 h1,
 h4 {
-  @apply font-bold tracking-wide
+  @apply font-bold tracking-wide text-2xl sm:text-4xl md:text-6xl
 }
 
 /*  hover:bg-surface-accent hover:bg-amber-100/30 hover:text-amber-600 */
@@ -48,7 +48,7 @@ h4 {
 /* text-3xl font-black tracking-tight text-black flex items-center gap-1 */
 
 .nav-logo {
-  @apply text-3xl font-bold tracking-tighter
+  @apply text-lg sm:text-3xl font-bold tracking-tighter
 }
 
 body {
@@ -61,7 +61,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  @apply bg-blend-multiply bg-slate-700 h-[80vh]
+  @apply bg-blend-multiply bg-slate-700 h-[60vh] md:h-[80vh]
 }
 
 /* CSS */
