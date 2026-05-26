@@ -6,7 +6,8 @@
     >
       <h1 class="font-bold">Kagay-an Furs</h1>
       <p class="text-md md:text-lg">
-        The first and only Furry Meetup in Cagayan de Oro
+        The first and only Furry Meetup Community in
+        <span class="font-semibold text-primary">Cagayan de Oro</span>
       </p>
       <div class="mt-4">
         <button class="flex items-center gap-2 justify-between">
