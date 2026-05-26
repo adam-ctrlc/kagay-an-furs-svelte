@@ -13,11 +13,20 @@
         <p class="text-sm line-clamp-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi.
         </p>
+        <button class="w-fit self-end">
+          <BsArrowReturnRight />
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { BsArrowReturnRight } from "@kalimahapps/vue-icons";
+
+export default {
+  components: {
+    BsArrowReturnRight,
+  },
+};
 </script>
