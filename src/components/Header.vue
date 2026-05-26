@@ -15,9 +15,8 @@
       <!-- DESKTOP LINKS -->
       <div class="hidden lg:flex gap-1 space-x-8">
         <a href="/" class="navigation-link">Home</a>
-        <!-- <a href="#about" class="navigation-link">About</a> -->
-        <a href="#" class="navigation-link">Archive</a>
         <a href="/team" class="navigation-link">Team</a>
+        <a href="#" class="navigation-link">Archive</a>
         <a href="#" class="navigation-link">Code of Conduct</a>
       </div>
 
@@ -49,10 +48,9 @@
       class="top-0 h-0 w-full overflow-hidden bg-white transtion-all duration-200 ease-in-out shadow-lg border border-gray-200 font-semibold text-gray-600"
     >
       <div class="flex flex-col pt-4">
-        <a href="/" class="navigation-link">Home</a>
-        <!-- <a href="#about" class="navigation-link">About</a> -->
-        <a href="#" class="navigation-link">Archive</a>
+         <a href="/" class="navigation-link">Home</a>
         <a href="/team" class="navigation-link">Team</a>
+        <a href="#" class="navigation-link">Archive</a>
         <a href="#" class="navigation-link">Code of Conduct</a>
       </div>
     </ul>

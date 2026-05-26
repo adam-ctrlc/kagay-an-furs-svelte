@@ -34,13 +34,18 @@
           bio="Not a furry, just a developer."
           :pfp="jynPfp"
         ></TeamCard>
-        <TeamCard name="Anakin PH" role="Adviser"></TeamCard>
+        <TeamCard name="Anakin PH" role="Adviser" :pfp="anakinPfp"></TeamCard>
         <TeamCard name="Cos de Al" role="Illustrator"></TeamCard>
-        <TeamCard name="Duke Horde" role="Honarary Guest, Adviser"></TeamCard>
+        <TeamCard
+          name="Duke Horde"
+          role="Honarary Guest, Adviser"
+          :pfp="dukePfp"
+        ></TeamCard>
         <TeamCard name="FusionThe Fox" role="Editor, Adviser"></TeamCard>
         <TeamCard
           name="Hiro Inagaki"
           role="Medical Volunteer, Security, Illustrator"
+          :pfp="hiroPfp"
         ></TeamCard>
         <TeamCard name="Horkey Sama" role="Ambasaddor, Security"></TeamCard>
         <TeamCard name="Jhappa Logramonte" role="Medical Volunteer"></TeamCard>
@@ -53,6 +58,9 @@ import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
 import TeamCard from "../components/TeamCard.vue";
 import jynPfp from "../assets/members/jyn.jpg";
 import cerbPfp from "../assets/members/cerb.jpg";
+import anakinPfp from "../assets/members/anakin.jpg";
+import dukePfp from "../assets/members/duke.jpg";
+import hiroPfp from "../assets/members/hiro.jpg";
 
 export default {
   components: {
@@ -64,6 +72,9 @@ export default {
     return {
       jynPfp,
       cerbPfp,
+      anakinPfp,
+      dukePfp,
+      hiroPfp,
     };
   },
 };
