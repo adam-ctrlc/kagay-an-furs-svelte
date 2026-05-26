@@ -18,7 +18,9 @@
         <h3 class="text-3xl tracking-wide font-extralight">Meet the team!</h3>
       </div>
 
-      <div class="grid grid-cols-4 space-y-10">
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-4 space-y-10 place-content-center w-full"
+      >
         <TeamCard
           name="Cerb"
           role="Founder"
