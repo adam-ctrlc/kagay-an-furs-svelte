@@ -2,7 +2,7 @@
   <div id="home" class="hero relative">
     <!-- contents -->
     <div
-      class="space-y-4 md:space-y-0 text-white flex items-start justify-center px-12 h-full flex-col"
+      class="space-y-4 md:space-y-0 text-white flex items-start justify-center px-4 md:px-12 h-full flex-col"
     >
       <h1 class="font-bold">Kagay-an Furs</h1>
       <p class="text-md md:text-lg">

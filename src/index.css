@@ -31,9 +31,12 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h4 {
+h1 {
   @apply font-bold tracking-wide text-2xl sm:text-4xl md:text-6xl
+}
+
+h4 {
+  @apply font-bold tracking-wide
 }
 
 /*  hover:bg-surface-accent hover:bg-amber-100/30 hover:text-amber-600 */

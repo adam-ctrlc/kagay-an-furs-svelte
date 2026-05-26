@@ -1,10 +1,16 @@
 <template>
-  <div class="card bg-surface-card w-[286px] rounded-md overflow-hidden">
-    <div class="flex flex-col border border-border-base gap-4">
-      <img src="https://placehold.co/200" alt="" class="" />
+  <div class="card bg-surface-card rounded-md overflow-hidden w-[250px]">
+    <div class="flex flex-col border border-border-base h-full">
+      <img
+        src="https://placehold.co/300x120"
+        alt=""
+        class="w-full h-50 object-cover"
+      />
+
       <div class="flex flex-col px-4 py-3">
-        <h1 class="text-lg">Keeping Up!</h1>
-        <p>
+        <h2 class="text-md md:text-lg font-semibold">Keeping Up!</h2>
+
+        <p class="text-sm line-clamp-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi.
         </p>
       </div>

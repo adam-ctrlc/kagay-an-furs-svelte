@@ -28,7 +28,7 @@
         </div> -->
       </div>
 
-      <div class="max-w-4xl space-y-8">
+      <div class="md:max-w-4xl space-y-8">
         <p class="text-md">
           Deserunt officia in occaecat incididunt dolore cupidatat. Cillum
           adipisicing elit aliqua tempor pariatur. Irure quis commodo in nisi
@@ -64,22 +64,28 @@
     </div>
   </section>
 
-  <section class="px-12 py-3 bg-white mb-12">
+  <section class="px-4 md:px-12 py-3 bg-white mb-12">
     <div class="my-10">
       <h4 class="text-2xl">Join Us</h4>
     </div>
 
     <div>
       <div class="flex flex-col gap-4 items-center justify-center">
-        <button class="text-lg w-lg flex items-center justify-center gap-4">
+        <button
+          class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
+        >
           Discord
           <AkDiscordFill />
         </button>
-        <button class="text-lg w-lg flex items-center justify-center gap-4">
+        <button
+          class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
+        >
           Facebook
           <AkFacebookFill />
         </button>
-        <button class="text-lg w-lg flex items-center justify-center gap-2">
+        <button
+          class="text-lg w-xs md:w-lg flex items-center justify-center gap-2"
+        >
           Visit us on furries.ph!
           <FlColorAnimalPawPrint class="rotate-45" />
         </button>

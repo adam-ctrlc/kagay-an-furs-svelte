@@ -5,7 +5,9 @@
     >
       <!-- Logo & Tagline -->
       <div class="flex items-center gap-4 duration-70 ease-in">
-        <h1 href="#" class="nav-logo">Kagay-an Furs</h1>
+        <h2 href="#" class="text-2xl font-extrabold md:text-3xl">
+          Kagay-an Furs
+        </h2>
         <FlColorAnimalPawPrint class="text-4xl rotate-45" />
       </div>
 

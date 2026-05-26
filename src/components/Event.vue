@@ -4,7 +4,9 @@
       <h4 class="text-2xl">Events</h4>
     </div>
     <div>
-      <div class="flex gap-12">
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center place-content-center"
+      >
         <EventCard />
         <EventCard />
         <EventCard />
