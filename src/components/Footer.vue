@@ -15,17 +15,17 @@
       <div class="flex flex-col gap-3">
         <p class="text-xs font-bold uppercase text-text-main">Quick Links</p>
         <a
-          href="#"
+          href="#home"
           class="text-sm text-white/80 hover:text-white transition-colors"
           >Home</a
         >
         <a
-          href="#"
+          href="#events"
           class="text-sm text-white/80 hover:text-white transition-colors"
           >Events</a
         >
         <a
-          href="#"
+          href="#about"
           class="text-sm text-white/80 hover:text-white transition-colors"
           >About</a
         >

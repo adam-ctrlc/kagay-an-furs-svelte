@@ -70,24 +70,30 @@
 
     <div>
       <div class="flex flex-col gap-4 items-center justify-center">
-        <button
-          class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
-        >
-          Discord
-          <AkDiscordFill />
-        </button>
-        <button
-          class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
-        >
-          Facebook
-          <AkFacebookFill />
-        </button>
-        <button
-          class="text-lg w-xs md:w-lg flex items-center justify-center gap-2"
-        >
-          Visit us on furries.ph!
-          <FlColorAnimalPawPrint class="rotate-45" />
-        </button>
+        <a :href="socialLinks.discord" target="_blank">
+          <button
+            class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
+          >
+            Discord
+            <AkDiscordFill />
+          </button>
+        </a>
+        <a :href="socialLinks.facebook" target="_blank">
+          <button
+            class="text-lg w-xs md:w-lg flex items-center justify-center gap-4"
+          >
+            Facebook
+            <AkFacebookFill />
+          </button>
+        </a>
+        <a :href="socialLinks.furiesph" target="_blank">
+          <button
+            class="text-lg w-xs md:w-lg flex items-center justify-center gap-2"
+          >
+            Visit us on furries.ph!
+            <FlColorAnimalPawPrint class="rotate-45" />
+          </button>
+        </a>
       </div>
     </div>
   </section>
@@ -98,6 +104,7 @@ import Header from "../components/Header.vue";
 import Hero from "../components/Hero.vue";
 import Event from "../components/Event.vue";
 import kfmImage from "../assets/kfm.jpg";
+import { socialLinks } from "../constants";
 import {
   AkDiscordFill,
   AkFacebookFill,
@@ -118,6 +125,7 @@ export default {
   data() {
     return {
       kfmImage,
+      socialLinks,
     };
   },
 };
