@@ -12,13 +12,13 @@
     <span class="divider-line"></span>
   </div>
 
-  <main class="">
+  <main class="mb-12">
     <section id="about" class="px-12 py-3">
       <div class="my-5">
         <h3 class="text-3xl tracking-wide font-extralight">Meet the team!</h3>
       </div>
 
-      <div class="grid grid-cols-4">
+      <div class="grid grid-cols-4 space-y-10">
         <TeamCard
           name="Cerb"
           role="Founder"
@@ -30,7 +30,16 @@
           role="Web Developer"
           bio="Not a furry, just a developer."
         ></TeamCard>
-        <TeamCard></TeamCard>
+        <TeamCard name="Anakin PH" role="Adviser"></TeamCard>
+        <TeamCard name="Cos de Al" role="Illustrator"></TeamCard>
+        <TeamCard name="Duke Horde" role="Honarary Guest, Adviser"></TeamCard>
+        <TeamCard name="FusionThe Fox" role="Editor, Adviser"></TeamCard>
+        <TeamCard
+          name="Hiro Inagaki"
+          role="Medical Volunteer, Security, Illustrator"
+        ></TeamCard>
+        <TeamCard name="Horkey Sama" role="Ambasaddor, Security"></TeamCard>
+        <TeamCard name="Jhappa Logramonte" role="Medical Volunteer"></TeamCard>
       </div>
     </section>
   </main>

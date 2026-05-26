@@ -12,12 +12,20 @@
           {{ name || "John Doe" }}
         </h2>
         <span
+          v-for="r in role.split(',')"
           :class="[
-            'font-light ',
-            { 'text-primary font-semibold': role == 'Founder' },
-            { 'text-blue-600/60  font-light': role == 'Web Developer' },
+            `font-light `,
+            { 'text-primary font-semibold': r == 'Founder' },
+            { 'text-blue-600/60  font-light': r == 'Web Developer' },
+            { 'text-purple-600/60 font-light': r.trim() == 'Adviser' },
+            { 'text-green-600/60 font-light': r.trim() == 'Illustrator' },
+            { 'text-red-600/60 font-light': r.trim() == 'Security' },
+            { 'text-pink-600/60 font-light': r.trim() == 'Medical Volunteer' },
+            { 'text-cyan-600/60 font-light': r.trim() == 'Honarary Guest' },
+            { 'text-amber-600/60 font-light': r.trim() == 'Editor' },
+            { 'text-lime-600/60 font-light': r.trim() == 'Ambasaddor' },
           ]"
-          >{{ role || "Member" }}</span
+          >{{ r || "Member" }}</span
         >
         <span v-if="fursona" class="text-sm text-text-main/60"
           >Fursona: {{ fursona }}</span
@@ -45,6 +53,10 @@ export default {
   components: {
     BsArrowReturnRight,
     FlColorAnimalPawPrint,
+  },
+
+  data() {
+    return {};
   },
 };
 </script>
