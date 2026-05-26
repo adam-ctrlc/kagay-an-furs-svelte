@@ -36,7 +36,7 @@
         <p class="text-xs font-bold uppercase text-text-main">Find Us</p>
 
         <a
-          href="https://facebook.com"
+          :href="socialLinks.facebook"
           target="_blank"
           class="flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors"
         >
@@ -54,7 +54,7 @@
         </a>
 
         <a
-          href="https://discord.com"
+          :href="socialLinks.discord"
           target="_blank"
           class="flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors"
         >
@@ -72,7 +72,7 @@
         </a>
 
         <a
-          href="https://github.com"
+          :href="socialLinks.github"
           target="_blank"
           class="flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors"
         >
@@ -90,7 +90,7 @@
         </a>
 
         <a
-          href="https://furries.ph"
+          :href="socialLinks.furriesph"
           target="_blank"
           class="text-sm text-white/80 hover:text-white transition-colors"
         >
@@ -110,9 +110,16 @@
 
 <script>
 import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
+import { socialLinks } from "../constants";
+
 export default {
   components: {
     FlColorAnimalPawPrint,
+  },
+  data() {
+    return {
+      socialLinks,
+    };
   },
 };
 </script>

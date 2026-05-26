@@ -86,7 +86,7 @@
             <AkFacebookFill />
           </button>
         </a>
-        <a :href="socialLinks.furiesph" target="_blank">
+        <a :href="socialLinks.furriesph" target="_blank">
           <button
             class="text-lg w-xs md:w-lg flex items-center justify-center gap-2"
           >

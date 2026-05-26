@@ -10,12 +10,14 @@
         <span class="font-semibold text-primary">Cagayan de Oro</span>
       </p>
       <div class="mt-4">
-        <button class="flex items-center gap-2 justify-between">
-          Keep up with us!
-          <FlColorAnimalPawPrint
-            class="text-2xl hover:scale-110 hover:rotate-45 duration-200"
-          />
-        </button>
+        <a :href="socialLinks.furriesph" target="_blank">
+          <button class="flex items-center gap-2 justify-between">
+            Keep up with us!
+            <FlColorAnimalPawPrint
+              class="text-2xl hover:scale-110 hover:rotate-45 duration-200"
+            />
+          </button>
+        </a>
       </div>
     </div>
 
@@ -26,9 +28,17 @@
 </template>
 <script>
 import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
+import { socialLinks } from "../constants";
+
 export default {
   components: {
     FlColorAnimalPawPrint,
+  },
+
+  data() {
+    return {
+      socialLinks,
+    };
   },
 };
 </script>
