@@ -1,5 +1,5 @@
 <template>
-  <div class="hero relative">
+  <div id="home" class="hero relative">
     <!-- contents -->
     <div
       class="text-white border flex items-start justify-center px-12 h-full flex-col"

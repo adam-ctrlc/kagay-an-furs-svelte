@@ -1,27 +1,27 @@
 <template>
-  <!-- NAVBAR -->
-  <div class="flex justify-between items-center  bg-white border-b border-gray-200 p-4 lg:px-10">
+  <header class="fixed top-0 z-100 bg-white/80 backdrop-blur-md">
+    <!-- NAVBAR -->
+    <nav
+      class="flex w-screen justify-between items-center border-b border-gray-200 p-4 lg:px-10"
+    >
+      <!-- LOGO -->
+      <div
+        class="flex items-center gap-4 hover:text-primary duration-70 ease-in"
+      >
+        <h1 href="#" class="nav-logo">Kagay-an Furs</h1>
+        <FlColorAnimalPawPrint class="text-4xl rotate-45" />
+      </div>
 
-    <!-- LOGO -->
-    <div class="flex items-center gap-4 hover:text-primary duration-70 ease-in">
-      <h1 href="#" class="nav-logo">
-        Kagay-an Furs
-      </h1>
-      <FlColorAnimalPawPrint class="text-4xl rotate-45" />
-    </div>
+      <!-- DESKTOP LINKS -->
+      <div class="hidden lg:flex gap-1 space-x-8">
+        <a href="#home" class="navigation-link">Home</a>
+        <a href="#about" class="navigation-link">About</a>
+        <a href="#" class="navigation-link">Archive</a>
+        <a href="#" class="navigation-link">Code of Conduct</a>
+      </div>
 
-    <!-- DESKTOP LINKS -->
-    <div class="hidden lg:flex gap-1 space-x-8">
-      <a href="#" class="navigation-link">Home</a>
-      <a href="#" class=" navigation-link">About</a>
-      <a href="#" class=" navigation-link">Archive</a>
-      <a href="#" class=" navigation-link">Code
-        of
-        Conduct</a>
-    </div>
-
-    <!-- ATTEND BUTTON + MOBILE HAMBURGER -->
-    <!-- <div class="navbar-end gap-2">
+      <!-- ATTEND BUTTON + MOBILE HAMBURGER -->
+      <!-- <div class="navbar-end gap-2">
 
       <a href="#" class="btn btn-neutral btn-lg hidden sm:inline-flex font-bold px-5">
         🎟️ Attend KFM!
@@ -44,17 +44,17 @@
         </ul>
       </div>
     </div> -->
-  </div>
+    </nav>
+  </header>
 </template>
 
 <script>
-import { FlColorAnimalPawPrint } from '@kalimahapps/vue-icons';
+import { FlColorAnimalPawPrint } from "@kalimahapps/vue-icons";
 export default {
   components: {
     FlColorAnimalPawPrint,
-  }
-}
-
+  },
+};
 </script>
 
 <style>

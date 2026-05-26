@@ -27,6 +27,10 @@
   --font-body: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h4 {
   @apply font-bold tracking-wide
@@ -57,7 +61,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  @apply bg-blend-multiply bg-slate-700 h-[70vh]
+  @apply bg-blend-multiply bg-slate-700 h-[80vh]
 }
 
 /* CSS */

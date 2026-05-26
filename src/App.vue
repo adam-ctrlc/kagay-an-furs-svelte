@@ -9,7 +9,7 @@
     <img :src="kfmImage" />
   </section>
 
-  <section class="px-12 py-3 bg-[#f7f7f7]">
+  <section id="about" class="px-12 py-3 bg-[#f7f7f7]">
     <div class="my-10">
       <h4 class="text-2xl">About</h4>
     </div>
