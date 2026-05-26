@@ -64,7 +64,7 @@
     </div>
   </section>
 
-  <section class="px-12 py-3 bg-white">
+  <section class="px-12 py-3 bg-white mb-12">
     <div class="my-10">
       <h4 class="text-2xl">Join Us</h4>
     </div>
@@ -86,6 +86,8 @@
       </div>
     </div>
   </section>
+
+  <Footer />
 </template>
 
 <script>
@@ -98,6 +100,8 @@ import {
   AkFacebookFill,
   FlColorAnimalPawPrint,
 } from "@kalimahapps/vue-icons";
+import Footer from "./components/Footer.vue";
+
 export default {
   components: {
     Header,
@@ -106,6 +110,7 @@ export default {
     AkDiscordFill,
     AkFacebookFill,
     FlColorAnimalPawPrint,
+    Footer,
   },
   data() {
     return {
