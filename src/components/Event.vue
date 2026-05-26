@@ -8,6 +8,7 @@
         <EventCard />
         <EventCard />
         <EventCard />
+        <EventCard />
       </div>
     </div>
   </section>
