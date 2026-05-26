@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed top-0 z-50 bg-white/80 backdrop-blur-md w-full">
+  <header class="fixed top-0 z-50 bg-white/80 backdrop-blur-md w-screen">
     <!-- NAVBAR -->
     <nav
-      class="flex w-full justify-between items-center border-b border-gray-200 p-4 lg:px-10"
+      class="flex justify-between items-center border-b border-gray-200 p-4 lg:px-10"
     >
       <!-- LOGO -->
       <div
