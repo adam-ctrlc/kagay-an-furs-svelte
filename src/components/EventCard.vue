@@ -2,7 +2,7 @@
   <div class="card bg-surface-card rounded-md overflow-hidden w-[250px]">
     <div class="flex flex-col border border-border-base h-full">
       <img
-        src="https://placehold.co/300x120"
+        :src="image || 'https://placehold.co/300x120'"
         alt=""
         class="w-full h-50 object-cover"
       />
@@ -25,6 +25,7 @@
 import { BsArrowReturnRight } from "@kalimahapps/vue-icons";
 
 export default {
+  props: ["image"],
   components: {
     BsArrowReturnRight,
   },
