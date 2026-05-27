@@ -8,7 +8,12 @@
         class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center place-content-center"
       >
         <div v-for="event in events">
-          <EventCard :image="event.image" />
+          <EventCard
+            :image="event.image"
+            :title="event.title"
+            :description="event.description"
+            :date="event.date"
+          />
         </div>
       </div>
     </div>
@@ -32,27 +37,29 @@ export default {
         {
           title: "Keep up with the furs!",
           description:
-            "Occaecat elit sunt consectetur do adipisicing est occaecat nisi in laboris.",
+            "First of the 2 filler meetups of Kagay-an FurMeet (KFM) 2026.",
           image: event4,
+          date: "May 30-31, 2026",
         },
         {
-          title: "Keep up with the furs!",
-          description:
-            "Occaecat elit sunt consectetur do adipisicing est occaecat nisi in laboris.",
+          title: "Kagay-an FurMeet (KFM) 2026",
+          description: "The first furry meetup in CDO history!",
+          image: event1,
+          date: "Jan 25, 2026",
+        },
+        {
+          title: "Kagay-an FurMeet 0",
+          description: "Dry run in preparation for Kagay-an FurMeet 2026.",
           image: event3,
+          date: "Nov 23, 2025",
         },
         {
-          title: "Keep up with the furs!",
+          title: "Meet and Greet with Duke Horde",
           description:
-            "Occaecat elit sunt consectetur do adipisicing est occaecat nisi in laboris.",
+            "Special Meet & Greet with Duke Horde, a somewhat famous VR fur.",
 
           image: event2,
-        },
-        {
-          title: "Keep up with the furs!",
-          description:
-            "Occaecat elit sunt consectetur do adipisicing est occaecat nisi in laboris.",
-          image: event1,
+          date: "Dec 30 2025",
         },
       ],
     };

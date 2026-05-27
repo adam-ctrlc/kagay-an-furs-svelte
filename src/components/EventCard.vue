@@ -8,14 +8,15 @@
       />
 
       <div class="flex flex-col px-4 py-3">
-        <h2 class="text-md md:text-lg font-semibold">Keeping Up!</h2>
-
+        <h2 class="text-md md:text-lg font-semibold">{{ title }}</h2>
         <p class="text-sm line-clamp-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi.
+          {{ description }}
         </p>
-        <button class="w-fit self-end">
+        <small class="text-text-muted">{{ date }}</small>
+
+        <!-- <button class="w-fit self-end">
           <BsArrowReturnRight />
-        </button>
+        </button> -->
       </div>
     </div>
   </div>
@@ -25,7 +26,7 @@
 import { BsArrowReturnRight } from "@kalimahapps/vue-icons";
 
 export default {
-  props: ["image"],
+  props: ["image", "title", "description", "date"],
   components: {
     BsArrowReturnRight,
   },
