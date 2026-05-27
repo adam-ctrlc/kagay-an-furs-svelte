@@ -5,7 +5,7 @@
     </div>
     <div>
       <div
-        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center place-content-center"
+        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-6 gap-2 items-center place-content-center"
       >
         <div v-for="event in events">
           <EventCard
