@@ -4,7 +4,7 @@
       <!-- upcoming icon -->
       <div
         v-if="isUpcoming"
-        class="absolute -top-5 bg-primary/80 text-white p-4 rounded-full text-lg"
+        class="absolute -top-5 right-0 bg-primary/80 text-white p-4 rounded-full text-lg"
       >
         <MdSharpUpcoming />
       </div>
