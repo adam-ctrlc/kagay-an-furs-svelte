@@ -1,6 +1,14 @@
 <template>
-  <div class="card bg-surface-card rounded-md overflow-hidden w-[250px]">
-    <div class="flex flex-col border border-border-base h-full">
+  <div class="card bg-surface-card rounded-md w-[250px]">
+    <div class="relative flex flex-col border border-border-base h-full">
+      <!-- upcoming icon -->
+      <div
+        v-if="isUpcoming"
+        class="absolute -top-5 bg-primary/80 text-white p-4 rounded-full text-lg"
+      >
+        <MdSharpUpcoming />
+      </div>
+
       <img
         :src="image || 'https://placehold.co/300x120'"
         alt=""
@@ -24,11 +32,12 @@
 
 <script>
 import { BsArrowReturnRight } from "@kalimahapps/vue-icons";
-
+import { MdSharpUpcoming } from "@kalimahapps/vue-icons";
 export default {
-  props: ["image", "title", "description", "date"],
+  props: ["image", "title", "description", "date", "isUpcoming"],
   components: {
     BsArrowReturnRight,
+    MdSharpUpcoming,
   },
 };
 </script>

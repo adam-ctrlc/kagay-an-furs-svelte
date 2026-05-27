@@ -13,6 +13,7 @@
             :title="event.title"
             :description="event.description"
             :date="event.date"
+            :isUpcoming="new Date(event.date) > new Date()"
           />
         </div>
       </div>
@@ -39,7 +40,7 @@ export default {
           description:
             "First of the 2 filler meetups of Kagay-an FurMeet (KFM) 2026.",
           image: event4,
-          date: "May 30-31, 2026",
+          date: "May 30, 2026",
         },
         {
           title: "Kagay-an FurMeet (KFM) 2026",
