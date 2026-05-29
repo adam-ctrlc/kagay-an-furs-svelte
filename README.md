@@ -4,6 +4,9 @@
 > [Kagay-an Furs organization](https://github.com/Kagay-an-Furs/website-v2).
 > I forked it and rebuilt the front end in **SvelteKit + TypeScript**, then gave
 > it a fresh visual design.
+>
+> I did this after seeing the project from my friend
+> [jyn626](https://github.com/jyn626), who contributed to the original site.
 
 ![Kagay-an Furs landing page](static/images/preview.png)
 
